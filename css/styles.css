@@ -439,14 +439,13 @@ body {
 /*---------------- КЛИЕНТЫ ---------------------*/
 
 .clients-list {
-    display: flex;
-    justify-content: center;
-    
+    display: flex;  
 }
 
 .clients-item {
     width: 170px;
     height: 92px;
+    display: flex;
 }
 
 .clients-link {
@@ -455,11 +454,11 @@ body {
     color: var(--icon-color);
     border: 1px solid var(--icon-color);
     border-radius: 4px;
-    display: block; 
-
-    text-align: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    outline: transparent;
+    
 } 
 
 .clients-item:not(:last-child) {
@@ -470,6 +469,7 @@ body {
     width: 106px;
     height: 60px;
     fill: currentColor;
+
 }
 
 .clients-link:hover,
